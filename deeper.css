@@ -1,0 +1,31 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .image {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('download (2).jpeg');
+            position: relative;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            text-decoration: none;
+            color: white;
+            border: 1.2px solid whitesmoke;
+            padding: 15px 35px;
+            font-size: 72px;
+            background: transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            text-align: center;
+        }
+        .button:hover {
+            border: 1px solid #f44366;
+            background: #f44366;
+        }

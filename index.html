@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Services On The Internet</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="image">
+        <nav>
+            <a href="index.html"><img src="download (8).jpeg" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fantastic" onclick="hidemenu()">close</i>
+                <ul>
+                    <li><a href="https://www.google.com/">Google</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.amazon.com/">Amazon</a></li>
+                    <li><a href="https://www.netflix.com/">Netflix</a></li>
+                </ul>
+            </div>
+            <i class="fantas" onclick="showmenu()">menu</i>
+        </nav>
+
+        <div class="text-main">
+            <h1>Popular Services On The Internet</h1>
+            <p>Crafting a website is more than code; it's a canvas for ideas to flourish. Each line symbolizes creativity, each pixel a story. Embrace the journey—blend design with purpose, code with innovation. Your website, a beacon of your vision, awaits creation.<br> Dare to build, inspire, and leave your digital legacy.</p>
+            <a href="deeper.html" class="button">Let's Dig Deeper</a>
+        </div>
+    </section>
+
+    <section class="scroll">
+        <h1 id="shimmeringText"><i><u>Evolution and Impact of Popular Internet Services</u></i></h1>
+        <p class="r">The evolution of popular internet services mirrors our societal growth.
+            From humble beginnings, they've surged, transforming communication, commerce,
+            and entertainment. Their impact extends beyond screens, shaping cultures,
+            fostering connections, and redefining how we navigate this digital 
+            landscape. As they evolve, so do we, intertwined in an ever-evolving 
+            digital tapestry.</p>
+    <section class="hug">
+        <H1><u>Unveiling the Power of Internet Services: Exploring Opportunities and Growth</u></H1>
+        <P>Exploring services on the internet opens doors to a world of endless possibilities. With technology evolving constantly, delving deeper into studying internet services can be incredibly rewarding for various reasons.
+
+            Firstly, understanding internet services allows us to harness the power of connectivity. The internet serves as a hub for communication, commerce, information, and entertainment. By studying its services, one can uncover innovative ways to enhance these aspects, making interactions more seamless and efficient.
+            
+            Moreover, the internet continuously introduces new services and platforms. Investigating these developments not only keeps us up-to-date but also offers opportunities for innovation. Whether it's discovering new tools for productivity, exploring novel communication methods, or analyzing emerging trends in e-commerce, studying internet services enables us to adapt and thrive in an ever-evolving digital landscape.
+            
+            Additionally, the internet plays a pivotal role in shaping industries across the globe.<br><br><br> Understanding its services provides insights into how businesses operate, market, and deliver their products or services. It also presents opportunities to create and improve services, contributing to the growth and efficiency of various sectors.
+            
+            Furthermore, studying internet services can lead to personal and professional growth. It equips individuals with valuable skills in technology, data analysis, user experience, and more. These skills are increasingly in demand in today's job market, opening doors to diverse career paths in fields such as web development, digital marketing, cybersecurity, and beyond.
+            
+            Ultimately, continuing to explore and study internet services enables us to navigate this digital realm more effectively. It empowers us to innovate, adapt, and make informed decisions in both personal and professional spheres, fostering growth and enabling us to harness the full potential of the internet's offerings.</P>
+
+    </section>
+    </section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer id="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2023 Simple Website. | Follow Us: <a href="https://facebook.com">Facebook</a> | <a href="https://twitter.com">Twitter</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById('shimmeringText');
+        const goldColors = ['#FFD700', '#E6BE8A', '#FFDF00']; // Shades of gold
+        let currentIndex = 0;
+        
+        function shimmerEffect() {
+            textElement.style.transition = 'color 1s';
+            textElement.style.color = goldColors[currentIndex];
+            currentIndex = (currentIndex + 1) % goldColors.length;
+        }
+        
+        setInterval(shimmerEffect, 1000); // Change color every second
+        
+        let isScrolling;
+        window.addEventListener('scroll', function() {
+            clearTimeout(isScrolling);
+            const siteFooter = document.getElementById('site-footer');
+            siteFooter.classList.add('footer-hidden');
+            isScrolling = setTimeout(function() {
+                siteFooter.classList.remove('footer-hidden');
+            }, 100);
+        });
+        
+        // Fix: Add parentheses to function calls
+        function showmenu() {
+            const navlinks = document.getElementById('navlinks');
+            navlinks.style.right = "0";
+            navlinks.style.transition = "1s";
+        }
+        
+        function hidemenu() {
+            const navlinks = document.getElementById('navlinks');
+            navlinks.style.right = "-200px";
+            navlinks.style.transition = "1s";
+        }
+        
+    </script>
+</body>
+</html>
