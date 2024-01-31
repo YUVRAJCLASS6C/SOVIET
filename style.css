@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.scroll h1{
+    padding: 20px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: perspective(500px) rotateY(4deg);
+    font-size: 4em;
+    color: #FFD700; /* Initial gold color */
+    text-shadow: 1px 1px 3px rgba(240, 230, 140, 0.5), 2px 2px 6px rgba(240, 230, 140, 0.3);
+
+} 
+body {
+    font-family: 'Rubik Doodle Shadow', sans-serif; /* Set default font for the entire page */
+}
+.image {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('download (6).jpeg');
+    position: relative;
+    background-position: center;
+    background-size: contain;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    height: auto;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-transform: none;
+    font-size: 16px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 00%;
+    height: 2px;
+    background: #f44366;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+.nav-links ul li:hover::after{
+    width: 102%;
+}
+.text-main {
+    width: 89%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-main h1{
+    font-size: 61px;
+}
+.text-main p{
+    margin: 10px 0px 41px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1.2px solid whitesmoke;
+    padding: 15px 35px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button:hover {
+    border: 1px solid #f44366;
+    background: #f44366;
+}
+.fantastic {
+    display: none;
+}
+.fantas {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .text-main h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }     
+    .fantastic {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 36px;
+        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .fantas {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 36px;
+        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+        overflow-y: hidden;
+    }
+    
+    
+
+
+
+
+
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-hidden {
+    transform: translateY(100%); /* Hide the footer off the viewport */
+}
+.scroll p{
+    margin: 10px;
+    padding: 0px 20px;
+}
+.hug p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 0;
+    color: black;
+    background-color: #fff;
+    margin-bottom: 200px;
+}
+.r {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hug H1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f44336;
+    font-size: 47px;
+    font-style: normal;
+    transform: rotateY(0deg);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
